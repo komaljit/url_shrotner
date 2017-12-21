@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="get a short url" />
+        <meta name="keywords" content="url shortner, generate a short url" />
+        <meta name="author" content="komaljit singh" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-store" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href={{url_for("static",filename="style.css")}} />
+        <script type="text/javascript" src={{url_for("static",filename="javascript.js")}}></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div class="logo">
+            <img src={{url_for("static",filename="Logo.png")}}/>
+        </div>
+        <div class="content">
+        <div class='form_div'>
+            <form method='POST'>
+            <ul> 
+               <li>              
+                  <b>Shorten any URL in less than a second</b>   
+               </li>
+               <li>         
+                <p id="text">Make it easier to send and embed links.</p>
+               </li>
+               <li class="long_url">  
+                  <label for="url"><b>Link</b></label><br>
+                  <input type="text" class="input1" onChange="activateShortner()" placeholder="Type in or paste link here" name='url'/>
+               </li>       
+                <li class="short_url">
+                   <label for="short url">Shortened URL</label><br>    
+                   <input type='text' class="input2" id="kom" name="short url" disabled/>
+                </li>
+                <li style="text-align:center;">
+                    <button type='button' id="asText" onClick="shortenUrl()">Shorten URL</button>
+                </li>
+            </ul>
+            </form>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_item">
+                <img src={{url_for("static",filename="Phone Icon.png")}}><font>+1-408-831-8959</font>
+            </div>
+            <div class="footer_item"> 
+             
+                <img src={{url_for("static",filename="Email Icon.png")}}>
+                <a href="sandhawaliakomal@gmail.com"><font color="white">sandhawaliakomal@gmail.com</font></a>
+                </div>
+            <div class="footer_item2">
+                <font>&#169 The Testing Company. All rights Reserved</font>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
