@@ -34,8 +34,7 @@ def get_short_url():
         print(url)
     req = get_short2_url(url)
     short = toBase62(req,62)
-    print(short)
-    return short
+    short = "http://34.230.73.181:6100/{}".format(short)
 
 @app.route('/<st_url>')
 def st_url(st_url):
