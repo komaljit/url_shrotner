@@ -1,10 +1,8 @@
-function activateShortner(){
-    document.getElementById("asText").disabled = false;
-}
-
 function shortenUrl(){
 var value = $('.input1').val();
-console.log(value)
+if(value==""){
+   return ""
+}
 $.ajax({
   type: 'POST',
   url: "http://34.230.73.181:6100/get_short_url",
@@ -18,10 +16,11 @@ $.ajax({
 });
 }
 
-function copy(){
+
+function copy_st_url(){
      var short_Url  = document.getElementById("kom");
      short_Url.select();
      alert(short_Url.value)
-     document.execCommand("Copy");
-
+     document.getElementById("cbtn").innerHTML="Copied"
+     document.execCommand("copy");
 }
