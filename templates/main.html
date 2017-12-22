@@ -7,14 +7,14 @@
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Cache-Control" content="no-store" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href={{url_for("static",filename="style.css")}} />
-        <script type="text/javascript" src={{url_for("static",filename="javascript.js")}}></script>
+        <link rel="stylesheet" type="text/css" href=/static/style.css />
+        <script type="text/javascript" src=/static/javascript.js></script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     </head>
     <body>
 
         <div class="logo">
-            <img src={{url_for("static",filename="Logo.png")}}/>
+            <img src=/static/Logo.png/>
         </div>
         <div class="content">
         <div class='form_div'>
@@ -35,6 +35,7 @@
                    <input type='text' class="input2" id="kom" name="short url" disabled/>
                 </li>
                 <li style="text-align:center;">
+                    <button id="cbtn" type="button" onClick="copy()">copy</button>
                     <button type='button' id="asText" onClick="shortenUrl()">Shorten URL</button>
                 </li>
             </ul>
@@ -43,11 +44,11 @@
         </div>
         <footer class="footer">
             <div class="footer_item">
-                <img src={{url_for("static",filename="Phone Icon.png")}}><font>+1-408-831-8959</font>
+                <img src=/static/Phone%20Icon.png><font>+1-408-831-8959</font>
             </div>
             <div class="footer_item"> 
              
-                <img src={{url_for("static",filename="Email Icon.png")}}>
+                <img src=/static/Email%20Icon.png>
                 <a href="sandhawaliakomal@gmail.com"><font color="white">sandhawaliakomal@gmail.com</font></a>
                 </div>
             <div class="footer_item2">
