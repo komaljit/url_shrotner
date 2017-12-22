@@ -78,6 +78,14 @@ body{
     font-size: 12px;
 }
 
+#cbtn{
+    background-color:black;
+    display:none;
+    font-size:8px;
+    color:white;
+    text-align:center;
+}
+
 .footer img{
     width:10px;
     height:10px; 
